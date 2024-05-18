@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <h1 class="logo" >Adventure</h1>
+        <ul class="nav-links">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn" ><a href="">Contact</a></li>
+        </ul>
+        <img src="photo_2024-05-14_19-14-51.jpg" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        
+        <div class="header-content">
+            <h2>به دنیای رنگی سفر کنید</h2>
+            <div class="line"></div>
+            <h1>هدیه ی بی نهایت</h1>
+            <a href="#" class="ctn" target="_blank" >بیشتر بدانید</a>
+                
+            
+        </div>
+    </header>
+
+    <section class="event" >
+        <div class="title">
+            <h1>رویداد های خاطراه انگیز</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="chattahoochee-sit-on-top-girls.jpg" alt="" class="gh" >
+                <h4>قایق سواری </h4>
+                <p>قایق سواری یکی از ورزش های زیبا و یونیک جهان محسوب میشود</p>
+                <a href="#" class="ctn" target="_blank" >بیشتر بدانید</a>
+            </div>
+
+            <div class="col">
+                <img src="dagcilik-tirmanma-turleri.webp" alt="" class="k" >
+                <h4>کوهنوردی  </h4>
+                <p>کوهنوردی یکی از ورزش های زیبا و یونیک جهان محسوب میشود</p>
+                <a href="#" class="ctn" target="_blank" >بیشتر بدانید</a>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <section class="explore" >
+        <div class="explore-content">
+            <h1>در دنیا سفر کنید</h1>
+            <div class="line"></div>
+        <p>وقتی در  جهان هستی که پر از است از زیبایی های درونی و بیرونی تمام منفی گرایی ها
+            تبدیل به زیبایی و مثبت اندیشی می شود
+        </p>
+        <a href="" class="ctn">بیشتر بدانید</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col">
+                <h1>سفر های لحظه ای و انتهای مسیر</h1>
+                <div class="line"></div>
+                <p>وقتی در  جهان هستی که پر از است از زیبایی های درونی و بیرونی تمام منفی گرایی ها
+                    تبدیل به زیبایی و مثبت اندیشی می شود و همه ی جها در راستای مسیر تو پیشرفت میکند</p>
+                <a href="" class="ctn">بیشتر بدانید</a>
+            </div>
+
+            <div class="col">
+                <div class="image-galary">
+                    <img src="start-here-lead.jpg" alt="">
+                    <img src="M_Rainier.jpg" alt="">
+                    <img src="couple-hang-out-nature-sunset_506452-18377.avif" alt="">
+                    <img src="1000_F_439391359_4eyle8hA0SC2Ee8lqgfw1KC0bQlTThxN.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p><a href="">Terms & Conditions</a>
+            |
+            <a href="">Privacy</a></p>
+        <p> Copyright © 2023 Football History Archives. All Rights Reserved.</p>
+
+    </section>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',() => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

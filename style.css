@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+body , html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    position:absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links{
+    display:flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 50px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity:unset;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: rgb(1, 1, 1);
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin: 50px 30px;
+    
+}
+.ctn {
+    padding: 8px 15px;
+    background: #0606cc;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 17px;
+    
+}
+
+
+.menu-btn{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+section{
+    margin: 80px auto;
+    width: 80%;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #0606cc;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gh{
+    border-radius: 80px;
+    width: 400px;
+    height: 280px;
+}
+.k{
+    border-radius: 80px;
+    width: 400px; 
+    margin-top: 7px;
+}
+.event .ctn{
+    margin-top:20px ;
+}
+.event .col h4{
+    margin: 10px 20px;
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://uphillathlete.com/wp-content/uploads/2020/01/Planjava-01-copy-e1580757260659.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+.explore-content{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+.explore-content .ctn{
+    margin-top: 30px;
+}
+
+
+.tours .row{
+    display: flex;
+    align-items: center;
+}
+
+.tours .row .col{
+    width: 50%;
+}
+.tours .image-galary{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-galary img{
+    width: 230px;
+    height: 200px;
+    margin: 20px;
+}
+.tours .col h1{
+    font-size: 7vmin;
+    color: #0606cc;
+}
+.tours .col p{
+    margin: 17px;
+    text-align: center;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    padding: 20px 20px;
+    margin: 0;
+    background-color:#020228;
+    text-align: center;
+}
+
+
+
+/* Mobile device */
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #0606cc;
+        margin-top: -900px;
+        transition: all 0.5s ease ; 
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto ;
+    }
+
+    /* events */
+
+    .row{
+        flex-direction: column;
+    }
+    .col img{
+        max-width: 90%;
+    }
+
+    /* explore */
+    .explore-content{
+        width: 100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-galary{
+        justify-content:center ;
+        align-items: center;
+    }
+    .image-galary img{
+        width: 90%;
+    }
+
+}
+
+/* Animation */
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background-color: whitesmoke;
+    color:#fc036b;
+    box-shadow: #020228;
+}
